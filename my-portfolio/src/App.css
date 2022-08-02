@@ -644,6 +644,10 @@ textarea {
     height: 85vh !important;
   }
 
+  .card:hover .imgBx {
+    top: -20% !important;
+  }
+
   .card .about-content .details {
     margin-bottom: -115% !important;
   }

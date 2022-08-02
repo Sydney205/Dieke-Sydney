@@ -51,7 +51,7 @@ class About extends Component {
                     I enjoy building everything from websites to rich
                     interactive apps.
                     <br />
-                    So if you are a buisness or a person seeking web presence...
+                    So if you are a person or a buisness seeking web presence...
                   </p>
                 </div>
                 <div className="about-btn">
