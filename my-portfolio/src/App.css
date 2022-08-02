@@ -1,0 +1,830 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&family=Roboto&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*                                         HTML                                     */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Microsoft sans serif;
+}
+
+h1 {
+  font-weight: bold !important;
+}
+
+:root {
+  --default-white: #fff;
+  --default-red: #f23;
+  --default-dark: #222;
+  --default-green: #0f0;
+  --light-green: #4cdf58;
+  --nav-dark: #222223;
+  --transparent-color: rgba(0, 0, 0, 0);
+  --default-blue: #0000ff;
+  --light-blue: rgb(0, 162, 255);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.125rem;
+  letter-spacing: 0.313rem;
+}
+
+/* ---------------------------------------- NAVBAR --------------------------------------------- */
+
+nav {
+  height: auto !important;
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  padding: 1rem !important;
+}
+
+.nav-name {
+  color: var(--default-white);
+}
+
+#pro-name {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  color: var(--default-white);
+}
+
+.des {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(0, 162, 255);
+}
+
+/* NAV LINKS */
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Lobster Two", cursive;
+}
+
+.navbar-nav a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--default-white);
+  padding: 10px;
+  border-bottom: 0.1875rem solid var(--transparent-color);
+
+  font-size: 1.2rem;
+}
+
+.navbar-nav li {
+  margin-top: 1.1rem;
+}
+
+.navbar-nav li.active,
+.navbar-nav li.active:focus {
+  border-bottom: 0.1875rem solid rgb(0, 162, 255);
+}
+
+.navbar-nav li a:hover {
+  color: rgb(0, 162, 255);
+}
+
+/* ----------------------------------HOME SECTION--------------------------------------- */
+
+.header-wrapper {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./Background-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 95vh;
+}
+
+.main-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--default-white);
+}
+
+.bio {
+  font-family: "Rubik", "sans-serif";
+  font-size: 2rem;
+  color: white;
+}
+
+/*------------------------------------------TYPED TEXT----------------------------------------*/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--default-white);
+}
+
+.hire-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: var(--default-white);
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+  width: auto;
+  margin-top: 2rem;
+  border: 2px solid rgb(0, 162, 255);
+  opacity: 0.8;
+}
+
+.hire-btn:hover {
+  opacity: 1;
+  color: var(--default-white);
+}
+
+/* ----------------------------------------ABOUT SECTION--------------------------------------- */
+
+.about-wrapper {
+  position: relative;
+  background: linear-gradient(35deg, rgb(113, 0, 128), rgb(0, 162, 255));
+  width: 100%;
+  height: 140vh !important;
+  padding: 8em 0 8em 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-info2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-row-gap: 5rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.about-wrapper h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  top: -10%;
+}
+
+.card {
+  position: relative !important;
+  width: 350px;
+  height: 200px !important;
+  background: #fff;
+  border-radius: 20px !important;
+  box-shadow: 0 35px 80px #222;
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 500px !important;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%) !important;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border: 5px solid var(--default-dark);
+  border-radius: 20px;
+  box-shadow: 0 15px 50px #222;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.imgBx img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover .imgBx {
+  top: -30%;
+  width: 200px;
+  height: 200px;
+}
+
+.card .about-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card:hover .about-content .details {
+  margin-bottom: 0px;
+}
+
+.card .about-content .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -75%;
+}
+
+.card .about-content .details h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-family: "Lobster", cursive;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, rgb(113, 0, 128), rgb(0, 162, 255));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card .about-content .details .title {
+  font-size: 0.75em;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(113, 0, 128), rgb(0, 162, 255));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.5;
+  font-family: "Lobster two", cursive;
+  font-style: italic;
+  color: #222 !important;
+}
+
+.card .about-content .details .data {
+  font-family: "Lobster two", cursive;
+}
+
+.about-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .about-btn button {
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  font-family: "Lobster two", cursive;
+  border: none;
+  border-radius: 5px;
+  color: var(--default-white);
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(0, 162, 255);
+  box-shadow: 0 0 5px #222;
+  opacity: 0.8;
+}
+
+.about-btn button:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.info {
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 10%;
+}
+
+.about-main-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-rows: 15rem;
+}
+
+/* --------------------------------------------SKILLS-SECTION---------------------------------- */
+
+.Skills-wrapper {
+  position: relative;
+  background-color: var(--default-dark);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  width: 100% !important;
+  height: 200vh;
+  padding: 8em 1rem;
+}
+
+.main-info3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-icon-wrapper {
+  display: grid;
+  grid-template-rows: 15rem 15rem 15rem;
+  grid-template-columns: 15rem 15rem 15rem;
+  grid-gap: 3rem;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.skill-section-h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  background: linear-gradient(to right, rgb(113, 0, 128), rgb(0, 162, 255));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.icons-box {
+  text-align: center;
+  padding: 1rem;
+  color: #fff !important;
+  border: 0.1875rem solid var(--default-white);
+  border-radius: 50px !important;
+}
+
+.code-brackets {
+  color: var(--transparent-color);
+  transition: color 0.3s ease-out;
+  animation: brackets-animation 3s ease-out infinite;
+}
+
+@keyframes brackets-animation {
+  50% {
+    color: rgb(0, 162, 255);
+  }
+}
+
+.lang-title {
+  color: var(--default-white) !important;
+}
+
+#react-icon {
+  color: #61dafb;
+  animation: React-logo-spin infinite 20s linear;
+}
+
+/* --------------------------------------CONTACT SECTION--------------------------------------- */
+
+.contact-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgb(0, 162, 255), rgb(113, 0, 128));
+  height: 150vh;
+  padding-top: 8em !important;
+}
+
+.main-info4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  background: #fff;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+Form {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+label {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+::placeholder {
+  color: var(--default-dark);
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Rubik", "sans-serif";
+}
+
+input {
+  width: 40vw;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  /* border-bottom: 3px solid var(--default-dark); */
+  background-color: var(--default-white);
+  color: #222;
+  font-family: "Rubik", "sans-serif" !important;
+  font-size: 20px;
+}
+
+input:focus {
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+}
+
+textarea {
+  width: 50vw;
+  height: 130px;
+  border-radius: 6px;
+  font-family: "Rubik", "sans-serif" !important;
+  background: var(--default-white);
+  color: #222;
+}
+
+.error {
+  color: red;
+}
+
+.form-btn-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.box-3 {
+  background-color: rgba(59, 209, 21, 0.9);
+  width: fit-content;
+}
+
+.box-1 {
+  background-color: #ec2727;
+  width: fit-content;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 140px !important;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.send-btn {
+  width: 140px;
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.send-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.send-btn:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.send-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.send-btn:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.clear-btn {
+  width: 140px;
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.clear-btn span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.clear-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.clear-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.clear-btn:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.clear-btn:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* ------------------------------------ ANIMATIONS---------------------------------------------- */
+
+@keyframes React-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----------------------------------MEDIA QUERIES---------------------------------------- */
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  p {
+    margin-top: 1.6rem;
+    font-size: 1.5rem !important;
+  }
+
+  .card {
+    transform: scale(0.8);
+  }
+
+  .card:hover {
+    height: 85vh !important;
+  }
+
+  .card .about-content .details {
+    margin-bottom: -115% !important;
+  }
+
+  .card:hover .about-content .details {
+    margin-bottom: 0px !important;
+  }
+
+  .card .about-content .details h2 {
+    font-size: 2rem !important;
+  }
+
+  .card .about-content .details p {
+    font-size: 1.25rem !important;
+  }
+
+  ::placeholder {
+    font-size: 1rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.5rem;
+  }
+
+  .contact-wrapper {
+    padding: 8rem 1rem 3em 1rem;
+    height: 150vh;
+  }
+
+  .contact-wrapper h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  form {
+    width: auto;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .about1-first {
+    font-size: 2rem !important;
+    font-family: "Lobster two" cursive;
+  }
+
+  .about-h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 8rem !important;
+    height: 8rem !important;
+  }
+
+  .about-wrapper {
+    width: 100% !important;
+    height: 130vh !important;
+    padding: 5rem;
+  }
+
+  .main-info2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: auto auto;
+    grid-column-gap: 0.1875rem;
+    width: 100%;
+  }
+
+  .about-wrapper p {
+    font-size: 1rem !important;
+  }
+
+  #pro-name {
+    font-size: 2rem !important;
+    margin: none;
+  }
+
+  .des {
+    font-size: 1.5rem;
+  }
+
+  .Skills-wrapper {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .skills-icon-wrapper p {
+    font-size: 1rem !important;
+  }
+
+  .Skills-wrapper h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .skill-section-h2 {
+    font-size: 1rem !important;
+  }
+
+  .Skills-wrapper h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .skills-icon-wrapper {
+    display: grid !important;
+    grid-template-columns: 15rem !important;
+    grid-template-rows: 15rem 15rem 15rem 15rem 15rem 15rem !important;
+    grid-row-gap: 3rem !important;
+    margin-bottom: 8rem !important;
+  }
+
+  .contact-wrapper p {
+    color: white;
+    font-size: 15px !important;
+    opacity: 0.5;
+  }
+  .form-btn-container {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-3 {
+    margin-right: 30px;
+  }
+
+  .send-btn {
+    width: 90px !important;
+    height: 45px !important;
+  }
+  .clear-btn {
+    width: 90px !important;
+    height: 45px !important;
+  }
+}
+
+/* -------------------------------------------LANDSCAPE MEDIA QUERY------------------------------ */
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .header-wrapper {
+    height: 115vh !important;
+  }
+
+  /* ABOUT-SECTION */
+
+  .about-wrapper {
+    height: 130vh !important;
+  }
+
+  .main-info2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-row-gap: 5rem;
+    margin-top: 10rem;
+  }
+
+  /* SKILLS-SECTION */
+
+  .Skills-wrapper {
+    height: auto !important;
+  }
+
+  .skills-icon-wrapper {
+    display: grid !important;
+    grid-template-rows: 14rem 14rem 14rem !important;
+    grid-template-columns: 14rem 14rem 14rem !important;
+    grid-gap: 0.1875rem !important;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  /* CONTACT-SECTION */
+
+  .contact-wrapper {
+    height: 200vh !important;
+  }
+}
