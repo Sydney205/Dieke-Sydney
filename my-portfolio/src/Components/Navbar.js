@@ -1,8 +1,9 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div className="nav-name">

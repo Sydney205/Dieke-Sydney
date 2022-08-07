@@ -53,7 +53,7 @@ h1 {
 nav {
   height: auto !important;
   width: 100% !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  /* background-color: rgba(0, 0, 0, 0.9) !important; */
   padding: 1rem !important;
 }
 
@@ -510,7 +510,7 @@ label {
   font-family: "Lobster", cursive;
 }
 
-button {
+.projects-wrapper button {
   background: rgb(0, 162, 255);
   color: black;
   width: 20vw;
@@ -526,7 +526,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.projects-wrapper button:hover {
   background-color: rgb(5, 2, 46);
   color: rgb(0, 162, 255);
   border: 3px solid rgb(0, 162, 255);
@@ -536,7 +536,7 @@ button:disabled {
   opacity: 0.5;
 }
 
-button:disabled:hover {
+.projects-wrapper button:disabled:hover {
   transform: scale(1);
   cursor: default;
   background-color: rgb(0, 162, 255);
@@ -665,7 +665,7 @@ textarea:focus {
 }
 
 .box-1 {
-  background-color: #ec2727;
+  background-color: var(--default-red);
   width: fit-content;
 }
 
@@ -972,8 +972,30 @@ textarea:focus {
 
 /* -------------------TABLET VIEW----------------------- */
 
-/* @media screen and (max-width: ) {
-} */
+@media screen and (min-width: 510px) and (max-width: 900px) {
+  nav {
+    height: 13% !important;
+  }
+
+  h1 {
+    font-size: 6rem !important;
+  }
+
+  .bio {
+    font-size: 3rem !important;
+  }
+
+  .typed-text {
+    font-size: 2.5rem !important;
+  }
+
+  .about-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
 
 /* -------------------------------------------LANDSCAPE MEDIA QUERY------------------------------ */
 /* 
