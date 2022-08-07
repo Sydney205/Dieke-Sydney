@@ -1,20 +1,17 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact";
+import { Routes, Route } from "react-router-dom";
+import Main from "./Components/Main";
+import ProjectTest from "./Components/ProjectTest";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="Projects" element={<ProjectTest />} />
+      </Routes>
     </div>
   );
 }

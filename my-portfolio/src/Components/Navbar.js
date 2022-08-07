@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -44,6 +45,9 @@ const Navbar = () => {
             <NavHashLink to="#skills" className="nav-item">
               Skills
             </NavHashLink>
+          </li>
+          <li>
+            <NavLink to={"/Projects"}>Project Test</NavLink>
           </li>
           <li>
             <NavHashLink to="#contact" className="nav-item">

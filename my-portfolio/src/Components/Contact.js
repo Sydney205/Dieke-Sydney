@@ -1,5 +1,7 @@
 import React from "react";
 import { FaJava } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import MyForm from "./MyForm";
 
 function Contact() {
@@ -9,7 +11,7 @@ function Contact() {
         <h1>Let's do business together...</h1>
         <h2 style={{ color: "white", textAlign: "center" }}>
           How would you like your coffee
-          <FaJava color="orange" size={"3rem"} />
+          <FaJava color="white" size={"3rem"} />
         </h2>
         <h3 style={{ fontStyle: "italic", opacity: "0.5" }}>Send me a Mail</h3>
         <MyForm />
@@ -22,6 +24,7 @@ function Contact() {
         >
           &copy; All Rights reserved 2022.
         </p>
+        <Link to={"/Projects"}>Project Test</Link>
       </div>
     </section>
   );

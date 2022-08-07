@@ -36,6 +36,7 @@ h1 {
   --transparent-color: rgba(0, 0, 0, 0);
   --default-blue: #0000ff;
   --light-blue: rgb(0, 162, 255);
+  --dark-blue: rgb(5, 2, 46);
 }
 
 body {
@@ -355,13 +356,14 @@ nav ul li a {
 
 .Skills-wrapper {
   position: relative;
-  background-color: var(--default-dark);
+  background-color: var(--dark-blue);
   background-size: cover;
   background-position: center;
   color: #fff;
   width: 100% !important;
   height: 200vh;
   padding: 8em 1rem;
+  border-bottom: 1px solid rgb(0, 162, 255);
 }
 
 .main-info3 {
@@ -393,7 +395,7 @@ nav ul li a {
   text-align: center;
   padding: 1rem;
   color: #fff !important;
-  border: 0.1875rem solid var(--default-white);
+  border: 0.1875rem solid var(--light-blue);
   border-radius: 50px !important;
 }
 
@@ -418,7 +420,150 @@ nav ul li a {
   animation: React-logo-spin infinite 20s linear;
 }
 
-/* --------------------------------------CONTACT SECTION--------------------------------------- */
+/* ------------------------------------------PROJECT SECTION----------------------------------------------- */
+
+.projects-wrapper {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 2, 46);
+  color: #fff;
+  padding: 8em 0;
+}
+
+.projects-wrapper h1 {
+  font-size: 72px;
+  font-family: "Lobster", cursive;
+}
+
+.projects-wrapper h2 {
+  font-size: 36px;
+  font-family: "Lobster", cursive;
+}
+
+a {
+  color: rgb(0, 162, 255);
+}
+
+.projects-wrapper form {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: fit-content;
+  transition: 0.5s;
+  padding: 2rem;
+  transform: scale(0.95);
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgb(5, 2, 46);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+}
+
+.inputBox .placeholder,
+.inputBox input:empty + .placeholder {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: none;
+}
+
+.inputBox input:focus + .placeholder,
+.inputBox input:valid + .placeholder {
+  color: #00dfc4 !important;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.75em;
+  padding: 0 10px;
+  background-color: rgb(5, 2, 46) !important;
+  border-right: 1px solid #00dfc4;
+  border-left: 1px solid #00dfc4;
+  opacity: 1;
+}
+
+.inputBox input:focus {
+  border: 1px solid #00dfc4;
+  background-color: rgb(5, 2, 46);
+}
+
+label {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Lobster", cursive;
+}
+
+button {
+  background: rgb(0, 162, 255);
+  color: black;
+  width: 20vw;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px !important;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(5, 2, 46);
+  color: rgb(0, 162, 255);
+  border: 3px solid rgb(0, 162, 255);
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:disabled:hover {
+  transform: scale(1);
+  cursor: default;
+  background-color: rgb(0, 162, 255);
+  color: #000;
+}
+
+.hide {
+  color: rgba(0, 0, 0, 0);
+}
+
+.valid {
+  color: lime;
+}
+
+.offscreen {
+  display: none;
+}
+
+.instructions {
+  color: orange;
+}
+
+.hide {
+  display: none;
+}
+
+/* --------------------------------------------CONTACT SECTION-------------------------------------------- */
 
 .contact-wrapper {
   position: relative;
@@ -477,11 +622,10 @@ input {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  /* border-bottom: 3px solid var(--default-dark); */
   background-color: var(--default-white);
   color: #222;
   font-family: "Rubik", "sans-serif" !important;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 input:focus {
@@ -496,6 +640,13 @@ textarea {
   font-family: "Rubik", "sans-serif" !important;
   background: var(--default-white);
   color: #222;
+  font-family: "Rubik", "sans-serif";
+  font-size: 15px;
+}
+
+textarea:focus {
+  background-color: rgb(0, 162, 255);
+  color: white;
 }
 
 .error {
@@ -624,9 +775,11 @@ textarea {
   }
 }
 
-/* ----------------------------------MEDIA QUERIES---------------------------------------- */
+/* ---------------------------------------------MEDIA QUERIES----------------------------------------------- */
 
-@media screen and (max-width: 500px) {
+/* --------------------MOBILE PHONES VIEW--------------------- */
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
   h1 {
     font-size: 4rem !important;
   }
@@ -641,11 +794,11 @@ textarea {
   }
 
   .card:hover {
-    height: 85vh !important;
+    height: 90vh !important;
   }
 
   .card:hover .imgBx {
-    top: -20% !important;
+    top: -25% !important;
   }
 
   .card .about-content .details {
@@ -711,7 +864,7 @@ textarea {
 
   .about-wrapper {
     width: 100% !important;
-    height: 130vh !important;
+    height: 140vh !important;
     padding: 5rem;
   }
 
@@ -765,6 +918,33 @@ textarea {
     margin-bottom: 8rem !important;
   }
 
+  .projects-wrapper {
+    width: 100% !important;
+    height: 150vh !important;
+  }
+
+  .projects-wrapper h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .projects-wrapper h2 {
+    font-size: 1.7rem !important;
+    /* padding: 5rem 0 !import; */
+  }
+
+  .projects-wrapper p {
+    font-size: 1rem !important;
+  }
+
+  .projects-wrapper form {
+    width: 100% !important;
+    height: fit-content !important;
+  }
+
+  .projects-wrapper label {
+    font-size: 1rem !important;
+  }
+
   .contact-wrapper p {
     color: white;
     font-size: 15px !important;
@@ -790,17 +970,41 @@ textarea {
   }
 }
 
-/* -------------------------------------------LANDSCAPE MEDIA QUERY------------------------------ */
+/* -------------------TABLET VIEW----------------------- */
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .header-wrapper {
-    height: 115vh !important;
+/* @media screen and (max-width: ) {
+} */
+
+/* -------------------------------------------LANDSCAPE MEDIA QUERY------------------------------ */
+/* 
+@media screen and (max-width: 900px) and (min-width: 600px) and (orientation: landscape) {
+  nav .nav-name {
+    transform: scale(0.9);
   }
 
-  /* ABOUT-SECTION */
+  .header-wrapper h1 {
+    font-size: 3rem !important;
+  }
+  .header-wrapper .bio {
+    font-size: 1.6rem !important;
+  }
 
+  .header-wrapper .typed-text {
+    font-size: 1.3rem;
+  }
+
+  .header-wrapper {
+    height: 115vh !important;
+  } */
+
+/* ABOUT-SECTION */
+/* 
   .about-wrapper {
-    height: 130vh !important;
+    height: 200vh !important;
+  }
+
+  .card:hover .about-wrapper {
+    height: 250vh !important;
   }
 
   .main-info2 {
@@ -809,11 +1013,11 @@ textarea {
     grid-template-rows: auto;
     grid-row-gap: 5rem;
     margin-top: 10rem;
-  }
+  } */
 
-  /* SKILLS-SECTION */
+/* SKILLS-SECTION */
 
-  .Skills-wrapper {
+/* .Skills-wrapper {
     height: auto !important;
   }
 
@@ -824,11 +1028,11 @@ textarea {
     grid-gap: 0.1875rem !important;
     text-align: center;
     margin-top: 10vh;
-  }
+  } */
 
-  /* CONTACT-SECTION */
-
+/* CONTACT-SECTION */
+/* 
   .contact-wrapper {
     height: 200vh !important;
   }
-}
+} */
