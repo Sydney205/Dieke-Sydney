@@ -3,6 +3,7 @@ import { FaJava } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import MyForm from "./MyForm";
+import Footer from "./Footer";
 
 function Contact() {
   return (
@@ -15,6 +16,9 @@ function Contact() {
         </h2>
         <h3 style={{ fontStyle: "italic", opacity: "0.5" }}>Send me a Mail</h3>
         <MyForm />
+        <br />
+        <Footer />
+        <br />
         <p
           style={{
             color: "white",
@@ -24,7 +28,6 @@ function Contact() {
         >
           &copy; All Rights reserved 2022.
         </p>
-        <Link to={"/Projects"}>Project Test</Link>
       </div>
     </section>
   );
