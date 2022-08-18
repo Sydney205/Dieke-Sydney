@@ -558,6 +558,15 @@ nav ul li a:hover {
   background-clip: text;
 }
 
+.Skills-wrapper a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.Skills-wrapper a:hover {
+  text-decoration: underline;
+}
+
 .icons-box {
   text-align: center;
   padding: 1rem;
@@ -1494,4 +1503,32 @@ button:disabled {
   nav .nav-ul :nth-child(2) {
     display: none;
   }
+}
+
+.successPage-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.successPage-wrapper h1 {
+  top: 10%;
+  font-size: 72px;
+}
+
+.successPage-wrapper p {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.successPage-wrapper a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.successPage-wrapper a:hover {
+  text-decoration: underline;
+  color: white;
 }

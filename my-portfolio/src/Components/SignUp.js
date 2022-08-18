@@ -1,6 +1,12 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
-import { FaInfoCircle, FaLock, FaMale, FaUnlock } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaInfoCircle,
+  FaLock,
+  FaMale,
+  FaUnlock,
+} from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
@@ -73,10 +79,12 @@ const SignUp = () => {
 
       {success ? (
         <section className="successPage-wrapper">
-          <h1>Hello {user}!</h1>
+          <h1 style={{ textAlign: "center" }}>Hello {user}!</h1>
           <p>Welcome to my website</p>
           <p>
-            <Link to="/">Continue surfing the site</Link>
+            <Link to="/">
+              <FaArrowLeft /> Continue surfing the site
+            </Link>
           </p>
         </section>
       ) : (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiFillHome, AiOutlineClose } from "react-icons/ai";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiGrid } from "react-icons/fi";
 
 const SideNav = (props) => {
@@ -75,9 +75,9 @@ const SideNav = (props) => {
                     marginLeft: `${props.iconsLeft}`,
                   }}
                 >
-                  <FaWhatsapp size={"1.5rem"} className="sidebar-icons" />
+                  <FaLinkedin size={"1.5rem"} className="sidebar-icons" />
                 </span>
-                <span>08179326606</span>
+                <span>Linked in</span>
               </Link>
             </li>
           </ul>

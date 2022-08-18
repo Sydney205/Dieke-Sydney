@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCss3, FaHtml5, FaJs, FaPhp, FaReact } from "react-icons/fa";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Skills() {
   return (
@@ -22,7 +23,8 @@ function Skills() {
                 <span className="code-brackets">&#60;</span>HTML5{" "}
                 <span className="code-brackets">&frasl;&#62;</span>
               </h3>
-              <p>Building block of every webpage</p>
+              <p>Body work</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
 
@@ -36,6 +38,7 @@ function Skills() {
                 <span className="code-brackets">&#125;</span>
               </h3>
               <p>StyleSheet</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
 
@@ -47,7 +50,8 @@ function Skills() {
                 <span className="code-brackets">&#123;</span> Javascript{" "}
                 <span className="code-brackets">&#125;</span>
               </h3>
-              <p>Interactive effects within web browsers.</p>
+              <p>interactive effects.</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
 
@@ -60,6 +64,7 @@ function Skills() {
                 <span className="code-brackets">&#62;</span>
               </h3>
               <p>server side scripting</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
 
@@ -77,6 +82,7 @@ function Skills() {
                 <span className="code-brackets">&#41;</span>
               </h3>
               <p>Web database</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
 
@@ -94,6 +100,7 @@ function Skills() {
                 <span className="code-brackets">&#125;</span>
               </h3>
               <p>For a very responsive website</p>
+              <Link to="#">Learn More!</Link>
             </div>
           </div>
         </div>

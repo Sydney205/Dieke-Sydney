@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
-import { FaInfoCircle, FaLock, FaMale } from "react-icons/fa";
+import { FaInfoCircle, FaLock, FaMale, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 // Regular Expressions...
@@ -67,9 +67,11 @@ const Login = () => {
       {success ? (
         <section className="successPage-wrapper">
           <h1 style={{ textAlign: "center" }}>Welcome back {user}!</h1>
-
+          <p>Welcome to my website</p>
           <p>
-            <Link to="/">Continue surfing the site</Link>
+            <Link to="/">
+              <FaArrowLeft /> Continue surfing the site
+            </Link>
           </p>
         </section>
       ) : (
