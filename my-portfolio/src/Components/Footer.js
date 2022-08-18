@@ -1,38 +1,74 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
-const Footer = () => {
+const SideFooter = () => {
   return (
-    <div className="footer-wrapper">
-      <div className="button">
-        <div className="icons">
-          <FaFacebook className='icon'/>
+    <>
+      <section className="footer-wrapper">
+        <div className="button-container">
+          <div className="button">
+            <a
+              href="https://web.facebook.com/people/Dieke-Sydney/100081882726090/"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <div className="icons">
+                <FaFacebook className="icon" />
+              </div>
+              Dieke Sydney
+            </a>
+          </div>
+          <div className="button">
+            <a
+              href="https://twitter.com/DiekeSydney"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <div className="icons">
+                <FaTwitter className="icon" />
+              </div>
+              &#64;DiekeSydney
+            </a>
+          </div>
+          <div className="button">
+            <a
+              href="https://github.com/Sydney205"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <div className="icons">
+                <FaGithub className="icon" />
+              </div>
+              Sydney205
+            </a>
+          </div>
+          <div className="button">
+            <a
+              href="https://github.com/Sydney205"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              {" "}
+              <div className="icons">
+                <FaLinkedinIn className="icon" />
+              </div>
+              Dieke Sydney
+            </a>
+          </div>
         </div>
-        <a
-          href="https://web.facebook.com/people/Dieke-Sydney/100081882726090/"
-          target={"_blank"}  rel={'noreferrer'}
+        <br />
+        <p
+          style={{
+            color: "white",
+            fontSize: "10px !important",
+            opacity: "0.5",
+          }}
         >
-          Dieke Sydney
-        </a>
-      </div>
-      <div className="button">
-        <div className="icons">
-          <FaTwitter className='icon'/>
-        </div>
-        <a href="https://twitter.com/DiekeSydney" target={"_blank"} rel={'noreferrer'}>
-          &#64;DiekeSydney
-        </a>
-      </div>
-      <div className="button">
-        <div className="icons">
-          <FaGithub className='icon'/>
-        </div>
-        <a href="https://github.com/Sydney205" target={"_blank"} rel={'noreferrer'}>
-          Sydney205
-        </a>
-      </div>
-    </div>
+          &copy; All Rights reserved 2022.
+        </p>
+      </section>
+    </>
   );
 };
 
-export default Footer;
+export default SideFooter;

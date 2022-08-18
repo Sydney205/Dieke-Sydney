@@ -1,15 +1,13 @@
 import React from "react";
-import axios from "../api/axios";
 import { useRef, useState, useEffect } from "react";
 import { FaInfoCircle, FaLock, FaMale, FaUnlock } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 // Regular Expressions...
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PWD_REGEX = /^[a-zA-Z-!@#$%][a-zA-Z0-9-_!@#$%]{8,24}$/;
-
-const REGISTER_URL = "/SignUp";
 
 const SignUp = () => {
   const userRef = useRef();
@@ -64,30 +62,8 @@ const SignUp = () => {
     if (!v1 || !v2) {
       setErrMsg("Invalid Entry");
       return;
-    }
-    try {
-      const response = await axios.post(
-        REGISTER_URL,
-        JSON.stringify({ user, pwd }),
-        {
-          headers: { "content-type": "application.json" },
-          withCredentials: true,
-        }
-      );
-      console.log(response.data);
-      console.log(response.accessToken);
-      console.log(JSON.stringify(response));
+    } else {
       setSuccess(true);
-      // clear the input fields
-    } catch (err) {
-      if (!err?.response) {
-        setErrMsg("No Server response");
-      } else if (err.reponse?.status === 409) {
-        setErrMsg("Username Taken");
-      } else {
-        setErrMsg("Failed to sign up");
-      }
-      errRef.current.focus();
     }
   };
 
@@ -96,10 +72,11 @@ const SignUp = () => {
       {/* Success Page */}
 
       {success ? (
-        <section>
-          <h1>Success!</h1>
+        <section className="successPage-wrapper">
+          <h1>Hello {user}!</h1>
+          <p>Welcome to my website</p>
           <p>
-            <a href="#">Sign In</a>
+            <Link to="/">Continue surfing the site</Link>
           </p>
         </section>
       ) : (
@@ -244,7 +221,7 @@ const SignUp = () => {
             <br />
             <span className="line">
               {/* put router link here */}
-              <HashLink to="#Login">Login</HashLink>
+              <HashLink to="/ProjectTest2">Login</HashLink>
             </span>
           </p>
         </section>

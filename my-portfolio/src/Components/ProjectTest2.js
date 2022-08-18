@@ -1,16 +1,16 @@
 import React from "react";
-import SignUp from "./SignUp";
+import Login from "./Login";
 import { useNavigate } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
 import DefaultNav from "./DefaultNav";
 
-function ProjectTest() {
+function ProjectTest2() {
   const navigate = useNavigate();
   return (
     <div className="projects-wrapper">
       <DefaultNav />
       <div>
-        <SignUp />
+        <Login />
 
         <button className="exit-btn" onClick={() => navigate(-1)}>
           <FaChevronLeft />
@@ -21,4 +21,4 @@ function ProjectTest() {
   );
 }
 
-export default ProjectTest;
+export default ProjectTest2;

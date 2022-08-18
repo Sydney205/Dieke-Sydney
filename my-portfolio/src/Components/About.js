@@ -14,8 +14,9 @@ class About extends Component {
             <h1>About ME!</h1>
             <p
               style={{
-                color: "white",
-                fontFamily: "Lobster two",
+                color: "#222",
+                fontFamily: "Lobster",
+                // fontSize: "20px",
               }}
             >
               Click or hover the card below to see more about me...

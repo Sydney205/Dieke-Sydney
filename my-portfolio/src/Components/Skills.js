@@ -1,22 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { FaCss3, FaHtml5, FaJs, FaPhp, FaReact } from "react-icons/fa";
-import { MdOutlineChevronRight } from "react-icons/md";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
 function Skills() {
-  const navigate = useNavigate();
-
   return (
     <section className="Skills-wrapper" id="skills">
       <div className="main-info3">
         <h1 className="skill-section-h1">Here's what i do...</h1>
         <h3 className="bio2">
-          FrontEnd and BackEnd. From Web Components and UI/UX animations to
-          React.JS
+          FrontEnd and BackEnd.
+          <br />
+          From Web Components and UI/UX animations to React.JS
         </h3>
         <br />
-        <h3 color="rgb(0, 162, 255)">Languages i speak...</h3>
 
         <div className="skills-icon-wrapper">
           <div id="html-icon" className="icons-box">
@@ -101,13 +97,9 @@ function Skills() {
             </div>
           </div>
         </div>
-        <button className="project-btn" onClick={() => navigate("Projects")}>
-          Project Test <MdOutlineChevronRight />
-        </button>
-        <br />
-        <br />
       </div>
-
+      <br />
+      <br />
       <p
         style={{
           fontStyle: "italic",

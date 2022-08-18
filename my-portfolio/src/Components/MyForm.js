@@ -3,8 +3,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import TextError from "./TextError";
 import emailjs from "emailjs-com";
-import { FaMale, FaPen } from "react-icons/fa";
+import { FaMale, FaPen, FaTelegramPlane } from "react-icons/fa";
 import { MdCancel, MdEmail } from "react-icons/md";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const initialValues = {
   user_name: "",
@@ -107,7 +108,7 @@ function MyForm() {
           <div className="form-btn-container">
             <div className="box-3">
               <button className="btn send-btn" type="submit" value={"send"}>
-                <span>Send</span>
+                <span>Send</span> <FaTelegramPlane size={"1rem"} />
               </button>
             </div>
             <div className="box-1">
@@ -117,7 +118,7 @@ function MyForm() {
                 text="clear all"
                 className="btn clear-btn"
               >
-                Clear All
+                Clear all <AiOutlineCloseCircle />
               </button>
             </div>
           </div>
