@@ -944,8 +944,15 @@ label {
   color: rgb(0, 162, 255);
 }
 
-a {
-  color: rgb(0, 162, 255);
+.projects-wrapper a {
+  font-size: 15px;
+  color: white !important;
+  text-decoration: none;
+}
+
+.projects-wrapper a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .projects-wrapper form {
