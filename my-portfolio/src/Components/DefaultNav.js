@@ -22,7 +22,11 @@ const DefaultNav = () => {
         <div className="menu-bars">
           <div>
             <Link to="#">
-              <FaBars onClick={openSidenav} />
+              <FaBars
+                onClick={openSidenav}
+                color="rgb(0, 162, 255)"
+                size={"2rem"}
+              />
             </Link>
           </div>
         </div>
