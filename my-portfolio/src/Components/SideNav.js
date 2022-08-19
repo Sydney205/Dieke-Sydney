@@ -68,7 +68,11 @@ const SideNav = (props) => {
               </a>
             </li>
             <li className="sidebar-text">
-              <Link to="#">
+              <a
+                href="https://www.linkedin.com/search/results/all/?keywords=dieke%20sydney&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8ced8cb9-e121-4a6d-b3d5-a9aa17917b4e&sid=Dk*"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span
                   style={{
                     marginRight: "30px",
@@ -78,7 +82,7 @@ const SideNav = (props) => {
                   <FaLinkedin size={"1.5rem"} className="sidebar-icons" />
                 </span>
                 <span>Linked in</span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
