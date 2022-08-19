@@ -1181,6 +1181,10 @@ button:disabled {
     grid-template-columns: 15rem 15rem 15rem 15rem 15rem 15rem !important;
     grid-template-columns: 15rem !important;
   }
+
+  .card .about-content .details {
+    margin-bottom: -116%;
+  }
 }
 
 /* ---------------------------------------MOBILE PHONES VIEW------------------------------------------- */
