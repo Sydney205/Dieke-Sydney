@@ -946,7 +946,7 @@ label {
 
 .projects-wrapper a {
   font-size: 15px;
-  color: white !important;
+  color: white;
   text-decoration: none;
 }
 
