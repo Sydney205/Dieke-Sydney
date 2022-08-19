@@ -251,7 +251,7 @@ nav ul li a:hover {
 .header-wrapper {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./Background-image.jpg) no-repeat;
+    url(../public/Background-image.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100% !important;
@@ -411,7 +411,7 @@ nav ul li a:hover {
 }
 
 .card:hover .imgBx {
-  top: -30%;
+  top: -25%;
   width: 200px;
   height: 200px;
 }
