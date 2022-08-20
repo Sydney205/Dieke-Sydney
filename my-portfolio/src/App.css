@@ -1131,7 +1131,7 @@ button:disabled {
   }
 
   .card:hover {
-    height: 60vh !important;
+    height: 50vh !important;
   }
 
   .Skills-wrapper {
@@ -1183,7 +1183,17 @@ button:disabled {
   }
 
   .card .about-content .details {
-    margin-bottom: -116%;
+    margin-bottom: -306px;
+  }
+
+  .card:hover {
+    height: 50vh !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card:hover {
+    height: 50vh !important;
   }
 }
 
