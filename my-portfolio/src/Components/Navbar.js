@@ -9,6 +9,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState("");
 
   const changeBackground = () => {
+    console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setNavbar("rgba(0, 0, 0, 0.9)");
     } else {
@@ -56,7 +57,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavHashLink to="#about" className="nav-item">
-                About Me{" "}
+                About Me
               </NavHashLink>
             </li>
             <li>
