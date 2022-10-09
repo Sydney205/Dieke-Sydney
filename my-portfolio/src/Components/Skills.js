@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCss3, FaHtml5, FaJs, FaPhp, FaReact } from "react-icons/fa";
-import { AiOutlineConsoleSql } from "react-icons/ai";
+import { DiMysql } from "react-icons/di";
 import { Link } from "react-router-dom";
 
 function Skills() {
@@ -16,7 +16,7 @@ function Skills() {
         <br />
 
         <div className="skills-icon-wrapper">
-          <div id="html-icon" className="icons-box">
+          <div className="icons-box-content">
             <FaHtml5 size={"6rem"} color="#f23" className="icons" />{" "}
             <div className="icon-tiles">
               <h3 className="lang-title">
@@ -61,7 +61,7 @@ function Skills() {
               <h3 className="lang-title">
                 {" "}
                 <span className="code-brackets">&#60;?</span>PHP{" "}
-                <span className="code-brackets">&#62;</span>
+                <span className="code-brackets">?&#62;</span>
               </h3>
               <p>server side scripting</p>
               <Link to="#">Learn More!</Link>
@@ -69,7 +69,7 @@ function Skills() {
           </div>
 
           <div id="sql-icon" className="icons-box">
-            <AiOutlineConsoleSql
+            <DiMysql
               size={"6rem"}
               color="orange"
               id="bottom-icon"
@@ -78,7 +78,7 @@ function Skills() {
             <div className="icon-tiles">
               <h3 className="lang-title">
                 {" "}
-                <span className="code-brackets">&#40; </span>SQL{" "}
+                <span className="code-brackets">&#40; </span>My SQL{" "}
                 <span className="code-brackets">&#41;</span>
               </h3>
               <p>Web database</p>

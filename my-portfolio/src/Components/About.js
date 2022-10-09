@@ -25,7 +25,7 @@ class About extends Component {
           <div className="card">
             <div className="imgBx">
               <img
-                src={process.env.PUBLIC_URL + "/Logo.jpg"}
+                src={process.env.PUBLIC_URL + "/Logo.PNG"}
                 alt="Profile-pic"
               />
             </div>
@@ -47,7 +47,7 @@ class About extends Component {
                       Hi! i'm Sydney
                     </span>
                     <br />
-                    A web developer and UI/UX javascript specialist and React.
+                    A FullStack developer and UI/UX javascript specialist and React.
                     <br />
                     I enjoy building everything from websites to rich
                     interactive apps.
@@ -60,6 +60,7 @@ class About extends Component {
                     <HashLink
                       to="#contact"
                       style={{ textDecoration: "none", color: "white" }}
+                      className='a'
                     >
                       {" "}
                       Hire Me

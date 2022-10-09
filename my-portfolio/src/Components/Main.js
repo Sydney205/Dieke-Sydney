@@ -4,6 +4,7 @@ import Header from "./Header";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import MERN from "./MERN";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <Header />
       <About />
       <Skills />
+      <MERN />
       <Contact />
     </div>
   );

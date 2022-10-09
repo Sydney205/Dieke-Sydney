@@ -88,7 +88,7 @@ const SideNav = (props) => {
         </div>
         <div className="profile" style={{ left: `${props.profileLeft}` }}>
           <div className="profile-img">
-            <img src={process.env.PUBLIC_URL + "/Logo.jpg"} alt="Profile-pic" />
+            <img src={process.env.PUBLIC_URL + "/Logo.PNG"} alt="Profile-pic" />
           </div>
           <div className="profile-content">
             <h4>Dieke Sydney</h4>
